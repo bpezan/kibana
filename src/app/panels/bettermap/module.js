@@ -208,7 +208,7 @@ function (angular, app, _, L, localRequire) {
                 maxZoom: 18,
                 minZoom: 2
               }).addTo(map);
-              layerGroup = new L.MarkerClusterGroup({maxClusterRadius:30});
+              layerGroup = new L.MarkerClusterGroup({maxClusterRadius:30, singleMarkerMode:true});
             } else {
               layerGroup.clearLayers();
             }
